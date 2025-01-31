@@ -10,9 +10,12 @@ const Favorites = () => {
                 {store.favorites.map((item, index) => (
                     <div className="col-4 mb-4" key={index}>
                         <div className="card">
-                            <img src={`https://starwars-visualguide.com/assets/img/characters/${index + 1}.jpg`} className="card-img-top" alt={item.name} />
+                            <img src={`https://starwars-visualguide.com/assets/img/characters/${index +1 }.jpg`} className="card-img-top" alt={item.name} />
                             <div className="card-body">
                                 <h5 className="card-title">{item.name}</h5>
+                                <h5 className="card-title">{item.gender}</h5>
+                                <h5 className="card-title">{item.hair_color}</h5>
+                                <h5 className="card-title">{item.eye_color}</h5>
                                 <button className="btn btn-outline-danger" onClick={() => actions.removeFavorite(item)}>- Remove from Favorites</button>
                             </div>
                         </div>

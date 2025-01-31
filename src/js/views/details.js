@@ -10,6 +10,9 @@ const Details = () => {
     return (
         <div className="container mt-5">
             <h1>{item.name}</h1>
+            <h1>{item.gender}</h1>
+            <h1>{item.name}</h1>
+            <h1>{item.name}</h1>
             {/* Agregar más detalles según si es persona, vehículo o planeta */}
         </div>
     );
