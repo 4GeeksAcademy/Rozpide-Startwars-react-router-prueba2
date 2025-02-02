@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 setStore({ favorites: store.favorites.filter(fav => fav !== item) });
             },
             loadSomeData: () => {
-                // Puedes definir esta función para cargar algunos datos iniciales si lo necesitas
+                // Puedes definir esta función para cargar algunos datos iniciales si se necesitas
             }
         }
     };
